@@ -1,0 +1,3 @@
+console.log('%c This project is made by Ianchzhu & csec-admins', 'color: #fff; background: #0aa;border-radius: 5px; padding: 1px 8px;padding: 5px');
+console.log('%c View ianchzhu on github: https://github.com/ianchzhu','color: #fff;background: #00a;border-radius: 5px;padding: 5px');
+console.log('%c View csec-admins on github: https://github.com/csec-admins','color: #fff;background: #0a0;border-radius: 5px;padding: 5px');
