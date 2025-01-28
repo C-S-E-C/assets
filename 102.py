@@ -1,12 +1,37 @@
-html.Div([
-    html.H1('Error 102 - Processing Error', style={'textAlign': 'center', 'marginTop': 50}),
-    dcc.Markdown('''
-        ## Oops! Something went wrong.
-
-        We are currently experiencing a processing error (Error 102). Please try again later or contact support for assistance.
-    ''', style={'textAlign': 'center', 'marginTop': 50}),
-    html.Div([
-        html.A('Go Back', href='/'),
-        html.A('Contact Support', href='mailto:support@example.com', style={'marginLeft': 20})
-    ], style={'textAlign': 'center', 'marginTop': 50})
-])
+app.layout = html.Div(
+    className="container",
+    children=[
+        html.H1("102", style={
+            'fontSize': '8rem',
+            'color': '#ff4757',
+            'textShadow': '0 0 10px rgba(255, 71, 87, 0.3)',
+            'margin': '0'
+        }),
+        html.P("Oops! Can't connect to the server.", style={
+            'fontSize': '1.5rem',
+            'color': '#cccccc',
+            'marginTop': '1rem',
+            'marginBottom': '1rem'
+        }),
+        html.A("Back to Home", href="/", className="home-link", style={
+            'display': 'inline-block',
+            'marginTop': '2rem',
+            'padding': '1rem 2rem',
+            'backgroundColor': '#2196f3',
+            'color': 'white',
+            'textDecoration': 'none',
+            'borderRadius': '5px'
+        })
+    ],
+    style={
+        'textAlign': 'center',
+        'padding': '2rem',
+        'backgroundColor': '#2a2a2a',
+        'borderRadius': '10px',
+        'boxShadow': '0 4px 6px rgba(0, 0, 0, 0.3)',
+        'maxWidth': '90%',
+        'width': '500px',
+        'margin': 'auto',
+        'marginTop': '10%'
+    }
+)
