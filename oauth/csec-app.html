@@ -1,0 +1,15 @@
+<html>
+<div id="page"></div>
+<script>
+    var page = document.getElementById("page");
+    var search = window.location.search.substring(1);
+    search = search.split("=");
+    search = search[1];
+    if(search == undefined) {
+        page.innerHTML = "<h1>Please allow access to the C.S.E.C organisation after clicking on the link below</h1><a href='https://github.com/login/oauth/authorize?client_id=Ov23liE9aGS05ejrWKAH&scope=read:org'><h1>go to github</h1></a>";
+    } else {
+        page.innerHTML = "<h1>Please copy the access code below to the app</h1><h1 style='color:blue'>" + search + "</h1>";
+    }
+    console.log(search);
+</script>
+</html>
